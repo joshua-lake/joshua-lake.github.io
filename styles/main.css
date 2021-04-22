@@ -1,0 +1,211 @@
+.body-container {
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    background-image: url(../images/church.png);
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(102, 132, 133, 0.644);
+    height: 150px;
+    border-radius: 25px;
+}
+
+.tabs {
+    display: flex;
+    align-self: flex-end;
+    font-size: 20;
+    font-family: 'Limelight', cursive;
+}
+
+#name {
+    color: #f7fefc;
+    font-size: 50px;
+    flex-grow: 0.9;
+    font-family: 'Limelight', cursive;
+    padding-left: 30px;
+}
+
+#name-title {
+    color: #f7fefc;
+    font-size: 40px;
+    flex-grow: 0.765;
+    font-family: 'Limelight', cursive;
+    padding-left: 30px;
+}
+
+
+h2 {
+    padding: 0px 30px 0px 30px;
+}
+
+h3 {
+    font-family: arvo;
+    color: rgb(35, 80, 138);
+    font-size: 25px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(17, 28, 78);
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    margin: 50px 0px 50px 0px;
+}
+
+.main-container-blog {
+    text-align: center;
+}
+
+.main-text {
+    padding: 50px 20px 10px 50px;
+    font-size: 38px;
+    font-family: arvo;
+    color: rgb(35, 80, 138);
+    text-align: center;
+    min-width: 560px;
+}
+
+.main-text-mbp {
+    padding: 10px 20px 10px 50px;
+    font-size: 30px;
+    font-family: arvo;
+    color: rgb(35, 80, 138);
+    text-align: center;
+    min-width: 560px;
+}
+
+.align-main-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#bowtie-text {
+    text-align: center;
+    color: rgb(35, 80, 138);
+    margin: -40px 20px 20px 20px;
+}
+
+.sub-main-text {
+    text-align: center;
+    color: rgb(35, 80, 138);
+    margin: 10px 200px 50px 200px;
+    line-height: 25px;
+    font-size: 18px;
+    
+}
+
+
+.footer-container {
+    background-color: rgba(102, 132, 133, 0.644);
+    height: 50px;
+    border-radius: 25px; 
+    text-align: center;
+    padding-top: 40px;
+    font-family: arvo;
+}
+
+.chance-pic {
+    
+    max-width: 500px;
+    max-height: 330px;
+    border-radius: 10pt;
+    margin-left: 150px;
+    
+}
+
+.blog-pic {
+    
+    max-width: 500px;
+    max-height: 330px;
+    border-radius: 10pt;
+    margin: 0px 50px 50px 0px ;
+    
+}
+
+.pics-row {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+p {
+    font-family: arvo;
+}
+
+
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropbtn {
+    font-size: 30px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 26px 16px 0px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(102, 132, 133);
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+border-radius: 10px;
+}
+
+
+
+
+
+
+
