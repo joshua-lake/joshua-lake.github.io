@@ -35,7 +35,7 @@
 #name-title {
     color: #f7fefc;
     font-size: 40px;
-    flex-grow: 0.765;
+    flex-grow: 0.795;
     font-family: 'Limelight', cursive;
     padding-left: 30px;
 }
@@ -195,7 +195,7 @@ text-align: left;
 
 .dropdown-content a:hover {
 background-color: #ddd;
-border-radius: 10px;
+
 }
 
 .dropdown:hover .dropdown-content {
