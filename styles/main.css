@@ -24,6 +24,14 @@
     font-family: 'Limelight', cursive;
 }
 
+
+.tabs-template {
+    display: flex;
+    align-self: flex-end;
+    font-size: 30;
+    font-family: 'Limelight', cursive;
+}
+
 #name {
     color: #f7fefc;
     font-size: 50px;
@@ -32,13 +40,32 @@
     padding-left: 30px;
 }
 
-#name-title {
+#name-mbp {
     color: #f7fefc;
     font-size: 40px;
     flex-grow: 0.795;
     font-family: 'Limelight', cursive;
     padding-left: 30px;
 }
+
+#name-lp {
+    color: #f7fefc;
+    font-size: 40px;
+    flex-grow: 0.9;
+    font-family: 'Limelight', cursive;
+    padding-left: 30px;
+}
+
+#name-iv {
+    color: #f7fefc;
+    font-size: 40px;
+    flex-grow: 0.88;
+    font-family: 'Limelight', cursive;
+    padding-left: 30px;
+}
+
+
+
 
 
 h2 {
@@ -47,8 +74,11 @@ h2 {
 
 h3 {
     font-family: arvo;
+    text-align: center;
     color: rgb(35, 80, 138);
     font-size: 25px;
+    
+    
 }
 
 a {
@@ -86,7 +116,7 @@ a:hover {
 
 .main-text-mbp {
     padding: 10px 20px 10px 50px;
-    font-size: 30px;
+    font-size: 35px;
     font-family: arvo;
     color: rgb(35, 80, 138);
     text-align: center;
@@ -113,6 +143,48 @@ a:hover {
     
 }
 
+
+.sub-main-text-list {
+    text-align: left;
+    color: rgb(35, 80, 138);
+    margin: 10px 200px 10px 300px;
+    line-height: 25px;
+    font-size: 18px;
+    
+}
+
+
+.sub-main-text-iv {
+    text-align: left;
+    color: rgb(35, 80, 138);
+    margin: 10px 100px 10px 100px;
+    line-height: 25px;
+    font-size: 17px;
+    
+}
+
+
+.small-title {
+    text-align: left;
+    color: rgb(35, 80, 138);
+    margin: 10px 200px 10px 200px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+
+.mini-title {
+    text-align: left;
+    color: rgb(35, 80, 138);
+    margin: 0px 200px 0px 250px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
 
 .footer-container {
     background-color: rgba(102, 132, 133, 0.644);
@@ -195,7 +267,7 @@ text-align: left;
 
 .dropdown-content a:hover {
 background-color: #ddd;
-
+border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -206,6 +278,18 @@ border-radius: 10px;
 
 
 
-
+ul {
+    margin: 0;
+  }
+  ul.dashed {
+    list-style-type: none;
+  }
+  ul.dashed > li {
+    text-indent: -5px;
+  }
+  ul.dashed > li:before {
+    content: "-";
+    text-indent: -5px;
+  }
 
 
