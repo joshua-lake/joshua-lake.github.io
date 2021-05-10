@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://127.0.0.1:5500/js-devtools-crashcourse.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./Devtools Sandbox_files/style.css">
+  <title>Devtools Sandbox</title>
+</head>
+<body>
+  <h1>Devtools playground</h1>
+  <button>Get Users</button>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<script>
+
+console.log("Hello")
+// console.error("you fucked up cunt")
+// console.log(myvar)
+
+// console.dir(document);
+
+// console.log(document.URL)
+
+//console.table([{name: 'John', email: 'test@test.com', age: 33}])
+
+//console.clear();
+
+
+// console.group('say hello')
+// console.log('hello john')
+// console.log('hello jim')
+// console.log('hello bob')
+// console.groupEnd('say hello')
+
+console.time('For Loop')
+for (var i = 0; i < 2000; i++){
+  console.log(i);
+}
+
+console.timeEnd('For Loop');
+
+// function greaterThan(x, y){
+//   console.assert(x > y, {"message":"x is not greater than y", "x": x, "y": y})
+// }
+
+// greaterThan(4, 5);
+
+
+
+
+document.querySelector('button').addEventListener ('click', getUsers)
+
+function getUsers(){
+
+}
+</script>
+
+
+
+
+
+
+
+<!-- <script>
+  // console.log('Hello');
+  // //console.log(myvar);
+  // console.error('An error');
+  // console.warn('A warning');
+  // console.dir(document);
+
+  // console.table([{name:'John', email:'test@test.com', age:33}]);
+
+  // console.clear();
+
+  // console.group('Say Hello');
+  //   console.log('Hello Brad');
+  //   console.log('Hello John');
+  //   console.log('Hello Sally');
+  // console.groupEnd('Say Hello');
+
+  // console.time('Run Loop');
+  // for (var i = 0; i < 20000; i++) {
+  //     console.log(i);
+  // };
+  // console.timeEnd('Run Loop');
+
+  // function greaterThan(a,b) {
+  //   console.assert(a > b, {"message":"a is not greater than b","a":a,"b":b});
+  // }
+
+  // greaterThan(5,6);
+
+  // document.querySelector('button').addEventListener('click', loadUsers);
+
+  //   // Load Github Users
+  //   function loadUsers(){
+  //       var xhr = new XMLHttpRequest();
+  //       xhr.open('GET', 'https://api.github.com/users', true);
+
+  //       xhr.onload = function(){
+  //         if(this.status == 200){
+  //           var users = JSON.parse(this.responseText);
+
+  //           var output = '';
+  //           for(var i in users){
+  //             output +=
+  //               '<div class="user">' +
+  //               '<img src="'+users[i].avatar_url+'" width="70" height="70">' +
+  //               '<ul>' +
+  //               '<li>ID: '+users[i].id+'</li>' +
+  //               '<li>Login: '+users[i].login+'</li>' +
+  //               '</ul>' +
+  //               '</div>';
+  //           }
+
+  //           document.getElementById('users').innerHTML = output;
+  //         }
+  //       }
+
+  //       xhr.send();
+  //     }
+
+  // Set localstorage - will stay until delete/clear
+  //localStorage.setItem('name','John');
+
+  // Set sessionstorage - will stay until browser close
+  //sessionStorage.setItem('user', 'Will');
+
+  // Set cookie
+  //document.cookie = "username=John Doe";
+
+</script>
+-->
+</body></html>
